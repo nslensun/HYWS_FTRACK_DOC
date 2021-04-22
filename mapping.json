@@ -1,0 +1,231 @@
+{
+    "Animation": {
+        "abbr": "ani", 
+        "full": "animation", 
+        "volume": "animation",
+        "naming": {
+            "maya-ascii": "{shot}.ma"
+        }
+    }, 
+    "Blocking": {
+        "abbr": "blk", 
+        "full": "blocking", 
+        "volume": "animation",
+        "naming": {
+            "maya-ascii": "{shot}.ma"
+        }
+    }, 
+    "CFX": {
+        "abbr": "cfx", 
+        "full": "cfx", 
+        "volume": "animation",
+        "naming": {
+            "houdini": "{shot}.hip"
+        }
+    }, 
+    "Compositing": {
+        "abbr": "comp", 
+        "full": "compositing", 
+        "volume": "compositing",
+        "naming": {
+            "nuke": "{shot}.nk"
+        }
+    }, 
+    "Design": {
+        "abbr": "ref", 
+        "full": "reference", 
+        "volume": "asset",
+        "naming": {
+        }
+    }, 
+    "FX": {
+        "abbr": "efx", 
+        "full": "efx", 
+        "volume": "fx",
+        "naming": {
+            "houdini": "{shot}.hip"
+        }
+    }, 
+    "Hair Curve": {
+        "abbr": "mdl", 
+        "full": "modeling", 
+        "volume": "asset",
+        "naming": {
+            "maya-ascii": "{asset_type}_{asset_name}_{state}_hair.ma",
+            "output-alembic": "{asset_type}_{asset_name}_{state}_hair.abc"
+        }
+    }, 
+    "Hair FX": {
+        "abbr": "cfx", 
+        "full": "hair", 
+        "volume": "asset",
+        "naming": {
+            "maya-ascii": "{asset_type}_{asset_name}_{state}_hair.hip",
+            "hair-hda": "{asset_type}_{asset_name}_{state}_hair.hda"
+        }
+    }, 
+    "High Polygon": {
+        "abbr": "mdl", 
+        "full": "modeling", 
+        "volume": "asset",
+        "naming": {
+            "maya-ascii": "{asset_type}_{asset_name}_{state}_hi.ma",
+            "output-alembic": "{asset_type}_{asset_name}_{state}_hi.abc"
+        }
+    }, 
+    "High Rigging": {
+        "abbr": "rig", 
+        "full": "rigging", 
+        "volume": "asset",
+        "naming": {
+            "maya-ascii": "{asset_type}_{asset_name}_{state}_hi.ma",
+            "output-alembic": "{asset_type}_{asset_name}_{state}_hi.abc"
+        }
+    }, 
+    "Layout": {
+        "abbr": "lay", 
+        "full": "layout", 
+        "volume": "animation",
+        "naming": {
+            "houdini": "{shot}.hip"
+        }
+    }, 
+    "Lighting": {
+        "abbr": "lgt", 
+        "full": "lighting", 
+        "volume": "compositing",
+        "naming": {
+            "houdini": "{shot}.hip"
+        }
+    }, 
+    "Lookdev": {
+        "abbr": "ldv", 
+        "full": "lookdev", 
+        "volume": "asset",
+        "naming": {
+        }
+    }, 
+    "Low Polygon": {
+        "abbr": "mdl", 
+        "full": "modeling", 
+        "volume": "asset",
+        "naming": {
+            "maya-ascii": "{asset_type}_{asset_name}_{state}_low.ma",
+            "output-alembic": "{asset_type}_{asset_name}_{state}_low.abc"
+        }
+    }, 
+    "Low Rigging": {
+        "abbr": "rig", 
+        "full": "rigging", 
+        "volume": "asset",
+        "naming": {
+            "maya-ascii": "{asset_type}_{asset_name}_{state}_low.ma",
+            "output-alembic": "{asset_type}_{asset_name}_{state}_low.abc"
+        }
+    }, 
+    "Matte Painting": {
+        "abbr": "mp", 
+        "full": "mattepainting", 
+        "volume": "compositing",
+        "naming": {
+        }
+    }, 
+    "Mid Polygon": {
+        "abbr": "mdl", 
+        "full": "modeling", 
+        "volume": "asset",
+        "naming": {
+            "maya-ascii": "{asset_type}_{asset_name}_{state}_mid.ma",
+            "output-alembic": "{asset_type}_{asset_name}_{state}_mid.abc"
+        }
+    }, 
+    "Mid Rigging": {
+        "abbr": "rig", 
+        "full": "rigging", 
+        "volume": "asset",
+        "naming": {
+            "maya-ascii": "{asset_type}_{asset_name}_{state}_mid.ma",
+            "output-alembic": "{asset_type}_{asset_name}_{state}_mid.abc"
+        }
+    }, 
+    "Modeling": {
+        "abbr": "mdl", 
+        "full": "modeling", 
+        "volume": "asset",
+        "naming": {
+            "maya-ascii": "{asset_type}_{asset_name}_{state}_hi.ma",
+            "output-alembic": "{asset_type}_{asset_name}_{state}_hi.abc"
+        }
+    }, 
+    "Previz": {
+        "abbr": "pvz", 
+        "full": "previz", 
+        "volume": "animation",
+        "naming": {
+            "maya-ascii": "{shot}.ma"
+        }
+    }, 
+    "Rendering": {
+        "abbr": "rdr", 
+        "full": "render", 
+        "volume": "compositing",
+        "naming": {
+            "output-exr": "{aov}_{channel}.{frame}.exr"
+        }
+    }, 
+    "Rigging": {
+        "abbr": "rig", 
+        "full": "rigging", 
+        "volume": "asset",
+        "naming": {
+            "maya-ascii": "{asset_type}_{asset_name}_{state}_hi.ma",
+            "output-alembic": "{asset_type}_{asset_name}_{state}_hi.abc"
+        }
+    }, 
+    "Surfacing": {
+        "abbr": "srf", 
+        "full": "surfacing", 
+        "volume": "asset",
+        "naming": {
+            "shader-hda": "{asset_type}_{asset_name}_{state}_arnold.hda",
+            "houdini": "{asset_type}_{asset_name}_{state}_arnold.hip"
+        }
+    }, 
+    "Texturing": {
+        "abbr": "tex", 
+        "full": "texturing", 
+        "volume": "asset",
+        "naming": {
+            "image-tif": "{asset_type}_{asset_name}_{state}_basecolor.{udim}.tif",
+            "substance-painter": "{asset_type}_{asset_name}_{state}_4k.spp"
+        }
+    }, 
+    "chr": {
+        "abbr": "chr", 
+        "full": "Character", 
+        "volume": "asset",
+        "naming": {
+        }
+    }, 
+    "efx": {
+        "abbr": "efx", 
+        "full": "FX", 
+        "volume": "asset",
+        "naming": {
+        }
+    }, 
+    "env": {
+        "abbr": "env", 
+        "full": "Environment", 
+        "volume": "asset",
+        "naming": {
+        }
+    }, 
+    "prop": {
+        "abbr": "prop", 
+        "full": "Prop", 
+        "volume": "asset",
+        "naming": {
+        }
+    }
+}
