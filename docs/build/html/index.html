@@ -36,6 +36,243 @@
 <div class="toctree-wrapper compound">
 </div>
 </div>
+<div class="section" id="module-FTShortcut">
+<span id="api"></span><h1>API<a class="headerlink" href="#module-FTShortcut" title="永久链接至标题">¶</a></h1>
+<dl class="py function">
+<dt id="FTShortcut.addAssetBuild">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">addAssetBuild</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_type_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assetbuild_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.addAssetBuild" title="永久链接至目标">¶</a></dt>
+<dd><p>Create a new assetbuild named <em>assetbuild_name</em> under the asset type named <em>asset_type_name</em>.</p>
+<p><em>project_name</em>, <em>asset_type_name</em> and <em>assetbuild_name</em> are in string type.</p>
+<p>Return True if operation was successful, otherwise return False.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.addScene">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">addScene</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scene_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.addScene" title="永久链接至目标">¶</a></dt>
+<dd><p>Create a new scene named <em>scene_name</em> under the project named <em>project_name</em>.</p>
+<p><em>project_name</em> and <em>scene_name</em> are in string type.</p>
+<p>Return True if operation was successful, otherwise return False.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.addShot">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">addShot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scene_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shot_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.addShot" title="永久链接至目标">¶</a></dt>
+<dd><p>Create a new shot named <em>shot_name</em> under the scene named <em>scene_name</em>.</p>
+<p><em>project_name</em>, <em>scene_name</em> and <em>shot_name</em> are in string type.</p>
+<p>Return True if operation was successful, otherwise return False.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.addTask">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">addTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.addTask" title="永久链接至目标">¶</a></dt>
+<dd><p>Create a new task named <em>task_name</em> under the category named <em>category_name</em>.</p>
+<p><em>object_name</em> is optional. When provided, create the task under the object named <em>object_name</em> instead.
+<em>project_name</em>, <em>context_name</em>, <em>category_name</em>, <em>object_name</em> and <em>task_name</em> are in string type.</p>
+<p>Return True if operation was successful, otherwise return False.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.addVersion">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">addVersion</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">media_file_path_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.addVersion" title="永久链接至目标">¶</a></dt>
+<dd><p>Create a new version under the task named <em>task_name</em>.</p>
+<p><em>project_name</em>, <em>context_name</em>, <em>category_name</em>, <em>object_name</em> and <em>task_name</em> are in string type.
+<em>media_file_path_list</em> is in list type.
+<em>version</em> is optional, in int type. By default, new version is added by 1.</p>
+<p>Return True if operation was successful, otherwise return False.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.deleteAssetBuild">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">deleteAssetBuild</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_type_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assetbuild_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.deleteAssetBuild" title="永久链接至目标">¶</a></dt>
+<dd><p>Delete a assetbuild named <em>assetbuild_name</em> under the asset type named <em>asset_type_name</em>.</p>
+<p><em>project_name</em>, <em>asset_type_name</em> and <em>assetbuild_name</em> are in string type.</p>
+<p>Return True if operation was successful, otherwise return False.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.deleteScene">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">deleteScene</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scene_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.deleteScene" title="永久链接至目标">¶</a></dt>
+<dd><p>Delete a scene named <em>scene_name</em> under the project named <em>project_name</em>.</p>
+<p><em>project_name</em> and <em>scene_name</em> are in string type.</p>
+<p>Return True if operation was successful, otherwise return False.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.deleteShot">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">deleteShot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scene_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shot_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.deleteShot" title="永久链接至目标">¶</a></dt>
+<dd><p>Delete a shot named <em>shot_name</em> under the scene named <em>scene_name</em>.</p>
+<p><em>project_name</em>, <em>scene_name</em> and <em>shot_name</em> are in string type.</p>
+<p>Return True if operation was successful, otherwise return False.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.deleteTask">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">deleteTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.deleteTask" title="永久链接至目标">¶</a></dt>
+<dd><p>Delete a task under the category named <em>category_name</em>.</p>
+<p><em>object_name</em> is optional. When provided, Delete the task under the category named <em>object_name</em> instead.
+<em>project_name</em>, <em>context_name</em>, <em>category_name</em>, <em>object_name</em> and <em>task_name</em> are in string type.</p>
+<p>Return True if operation was successful, otherwise return False.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.deleteVersion">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">deleteVersion</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.deleteVersion" title="永久链接至目标">¶</a></dt>
+<dd><p>Delete a specified <em>version</em> under the task named <em>task_name</em>.</p>
+<p><em>project_name</em>, <em>context_name</em>, <em>category_name</em>, <em>object_name</em> and <em>task_name</em> are in string type.
+<em>version</em> is in int type.</p>
+<p>Return True if operation was successful, otherwise return False.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getAssetBuild">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getAssetBuild</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_type_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assetbuild_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getAssetBuild" title="永久链接至目标">¶</a></dt>
+<dd><p>Return <em>assetbuild_name</em> if <em>assetbuild_name</em> under the asset type named <em>asset_type_name</em> exists, otherwise return None.</p>
+<p><em>project_name</em> and <em>asset_type_name</em> and <em>assetbuild_name</em> are in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getAssetBuilds">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getAssetBuilds</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_type_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getAssetBuilds" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of BrAssetBuild under the asset_type named <em>asset_type_name</em>.</p>
+<p><em>project_name</em> and <em>asset_type_name</em> are in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getAssetType">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getAssetType</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_type_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getAssetType" title="永久链接至目标">¶</a></dt>
+<dd><p>Return <em>asset_type_name</em> if <em>asset_type_name</em> under the project named <em>project_name</em> exists, otherwise return None.</p>
+<p><em>project_name</em> is in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getAssetTypes">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getAssetTypes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getAssetTypes" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of BrAssetType under the project named <em>project_name</em>.</p>
+<p><em>project_name</em> is in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getCategories">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getCategories</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getCategories" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of BrCategory(BrAssetType or BrScene) of given <em>context_name</em> under project named <em>project_name</em>.</p>
+<p><em>project_name</em> and <em>context_name</em> are in string type. 
+<em>context_name</em> should be either ‘asset’ or ‘shot’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getCategory">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getCategory</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getCategory" title="永久链接至目标">¶</a></dt>
+<dd><p>Return <em>category_name</em> if <em>category_name</em> exists, otherwise return None.</p>
+<p><em>project_name</em>, <em>context_name</em> and <em>category_name</em> are in string type.
+<em>context_name</em> should be either ‘asset’ or ‘shot’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getMapping">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getMapping</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getMapping" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of unpacked mapping json.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getObject">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getObject</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getObject" title="永久链接至目标">¶</a></dt>
+<dd><p>Return <em>object_name</em> if <em>object_name</em> under the category named <em>category_name</em> exists, otherwise return None.</p>
+<p><em>project_name</em>, <em>context_name</em>, <em>category_name</em> and <em>object_name</em> are in string type.
+<em>context_name</em> should be either ‘asset’ or ‘shot’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getObjects">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getObjects</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getObjects" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of BrObject(BrAssetBuild of BrShot) under the category named <em>category_name</em>.</p>
+<p><em>project_name</em>, <em>context_name</em> and <em>category_name</em> are in string type. 
+<em>context_name</em> should be either ‘asset’ or ‘shot’.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getProject">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getProject</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getProject" title="永久链接至目标">¶</a></dt>
+<dd><p>Return <em>project_name</em> if <em>project_name</em> exists, otherwise return None.</p>
+<p><em>project_name</em> is in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getProjects">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getProjects</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getProjects" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of BrProject.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getRoot">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getRoot</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getRoot" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a BrRoot instance.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getScene">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getScene</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scene_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getScene" title="永久链接至目标">¶</a></dt>
+<dd><p>Return <em>scene_name</em> if the scene named <em>scene_name</em> under the project named <em>project_name</em> exists, 
+otherwise return None.</p>
+<p><em>project_name</em> and <em>scene_name</em> are in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getScenes">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getScenes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getScenes" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of BrScene under the project named <em>project_name</em>.</p>
+<p><em>project_name</em> is in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getShot">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getShot</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scene_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shot_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getShot" title="永久链接至目标">¶</a></dt>
+<dd><p>Return <em>shot_name</em> if the scene named <em>shot_name</em> under the scene named <em>scene_name</em> exists, 
+otherwise return None.</p>
+<p><em>project_name</em>, <em>scene_name</em> and <em>shot_name</em> are in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getShots">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getShots</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scene_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getShots" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of BrShot under the scene named <em>scene_name</em>.</p>
+<p><em>project_name</em> is in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getTasks">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getTasks</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getTasks" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of BrTask under the category named <em>category_name</em>.</p>
+<p><em>object_name</em> is optional. When provided, return a dict of BrTask under <em>object_name</em> instead.
+<em>project_name</em>, <em>context_name</em>, <em>category_name</em> and <em>object_name</em> are in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getUser">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getUser</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getUser" title="永久链接至目标">¶</a></dt>
+<dd><p>Return user name if <em>user_name</em> exists, otherwise return None.</p>
+<p><em>user_name</em> is in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getUsers">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getUsers</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getUsers" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of BrUser.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.getVersions">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">getVersions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.getVersions" title="永久链接至目标">¶</a></dt>
+<dd><p>Return a dict of BrVersion under the task named <em>task_name</em>.</p>
+<p><em>project_name</em>, <em>context_name</em>, <em>category_name</em>, <em>object_name</em> and <em>task_name</em> are in string type.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="FTShortcut.toStrVersion">
+<code class="sig-prename descclassname"><span class="pre">FTShortcut.</span></code><code class="sig-name descname"><span class="pre">toStrVersion</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_version</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FTShortcut.toStrVersion" title="永久链接至目标">¶</a></dt>
+<dd><p>Convert int-formatted version to str-formatted version with provided <em>intversion</em>.</p>
+</dd></dl>
+
+</div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="永久链接至标题">¶</a></h1>
 <ul class="simple">

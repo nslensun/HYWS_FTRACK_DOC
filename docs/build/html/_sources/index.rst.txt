@@ -10,6 +10,10 @@ Welcome to FTShortcut's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+
+API
+===
+
 .. automodule:: FTShortcut
    :members:
 
